@@ -6,17 +6,22 @@ using UnityEngine.SceneManagement;
 public class CharacterLight : MonoBehaviour
 {
     public float lightrange;
-
-    public float startRange = 20f;
-    public float lightSpeed = 0.02f;
+    public float lifetime = 10f;
 
     public bool verloren = false;
 
-    float endRange = 0f;
+    bool load;
+
+    float time;
+
+    private float timer = 0f;
+    private int count;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
         
 
 
@@ -25,13 +30,58 @@ public class CharacterLight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        lightrange = startRange - Time.fixedTime;
-        if (lightrange == 0f)
+        if (!load)
         {
-            verloren = true;
-            Debug.Log("verloren");
 
-            
+
+            lightrange = lifetime - count;
+
+            if (lightrange == 0f)
+            {
+                verloren = true;
+                Debug.Log("verloren");
+
+
+            }
+        }
+        else
+        {
+            if (lightrange < lifetime)
+            {
+                
+                
+                lightrange =  count;
+            }
+        }
+       
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("lightarea"))
+        {
+            Debug.Log("getriggert");
+            load = true;
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("lightarea"))
+        {
+            load = false;
+        }
+    }
+    //##############################################################################
+    //Zeit
+    void FixedUpdate()
+    {
+        timer += Time.fixedDeltaTime;
+        if (timer >= 1f)
+        {
+            count++;
+            timer = 0f; // Zurücksetzen des Timers für die nächste Sekunde
+
+
+        }
+    }
+    //################################################################################
 }
