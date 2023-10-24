@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 
 public class CharacterLight : MonoBehaviour
 {
@@ -29,6 +29,8 @@ public class CharacterLight : MonoBehaviour
         if (lightrange == 0f)
         {
             verloren = true;
+            Debug.Log("verloren");
+
             
         }
     }
