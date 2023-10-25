@@ -15,26 +15,26 @@ public class CharacterLight : MonoBehaviour
     float time;
 
     private float timer = 0f;
-    private int count;
+    private float count;
 
 
     // Start is called before the first frame update
     void Start()
     {
 
-        
 
+        count = lifetime;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!load)
-        {
+        
+        
 
 
-            lightrange = lifetime - count;
+            lightrange =  count;
 
             if (lightrange == 0f)
             {
@@ -43,16 +43,8 @@ public class CharacterLight : MonoBehaviour
 
 
             }
-        }
-        else
-        {
-            if (lightrange < lifetime)
-            {
-                
-                
-                lightrange =  count;
-            }
-        }
+        
+        
        
     }
     private void OnTriggerStay(Collider other)
@@ -77,7 +69,19 @@ public class CharacterLight : MonoBehaviour
         timer += Time.fixedDeltaTime;
         if (timer >= 1f)
         {
-            count++;
+            if (load)
+            {
+                if (lightrange < lifetime)
+                {
+                    count++;
+                }
+                    
+            }
+            else
+            {
+                count--;
+            }
+            
             timer = 0f; // Zurücksetzen des Timers für die nächste Sekunde
 
 
