@@ -6,6 +6,7 @@ public class CharacterControler : MonoBehaviour
 {
     public static int schlüsselzähler = 0;
     public float moveSpeed = 5f;
+    bool tür = false;
 
     void Update()
     {
@@ -16,6 +17,11 @@ public class CharacterControler : MonoBehaviour
 
         transform.Translate(movement);
 
+       //###################################################
+
+        
+
     }
+    
 
 }

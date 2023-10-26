@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class türscript : MonoBehaviour
+public class schlüsselscript : MonoBehaviour
 {
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,16 +19,16 @@ public class türscript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-
-
-        if (other.CompareTag("Player") && CharacterControler.schlüsselzähler == 2)
-        {
-
-
+        
+        
+            if (other.CompareTag("Player"))
+            {
+            CharacterControler.schlüsselzähler++;
+            
             this.gameObject.SetActive(false);
-
-        }
-
-
+                
+            }
+        
+        
     }
 }
