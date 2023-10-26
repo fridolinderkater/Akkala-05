@@ -162,7 +162,7 @@ namespace FischlWorks_FogWar
             public Transform _RevealerTransform => revealerTransform;
 
             [SerializeField]
-            private int sightRange = 0;
+            public int sightRange = 0;
             public int _SightRange => sightRange;
 
             [SerializeField]
@@ -188,7 +188,7 @@ namespace FischlWorks_FogWar
 
         [BigHeader("Basic Properties")]
         [SerializeField]
-        private List<FogRevealer> fogRevealers = null;
+        public List<FogRevealer> fogRevealers = null;
         public List<FogRevealer> _FogRevealers => fogRevealers;
         [SerializeField]
         private Transform levelMidPoint = null;

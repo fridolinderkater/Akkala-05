@@ -1,12 +1,14 @@
+using FischlWorks_FogWar;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class CharacterLight : MonoBehaviour
 {
-    public float lightrange;
-    public float lifetime = 10f;
+    public int lightrange;
+    public int lifetime = 10;
 
     public bool verloren = false;
 
@@ -15,14 +17,16 @@ public class CharacterLight : MonoBehaviour
     float time;
 
     private float timer = 0f;
-    private float count;
+    private int count;
+
+    public csFogWar fogWar;
 
 
     // Start is called before the first frame update
     void Start()
     {
 
-
+        
         count = lifetime;
 
     }
@@ -30,11 +34,14 @@ public class CharacterLight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
 
 
-            lightrange =  count;
+
+        csFogWar.FogRevealer firstFogRevealer = fogWar._FogRevealers[0];
+        firstFogRevealer.sightRange =  lightrange;
+
+
+        lightrange =  count;
 
             if (lightrange == 0f)
             {
