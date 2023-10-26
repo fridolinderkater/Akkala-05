@@ -229,6 +229,75 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58530586}
   m_Mesh: {fileID: -1579241630799410176, guid: e45f986ec32ddb547abb3975dcaaa14e, type: 3}
+--- !u!1 &127685639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 127685640}
+  - component: {fileID: 127685642}
+  - component: {fileID: 127685641}
+  m_Layer: 0
+  m_Name: LightAreaCheckHitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &127685640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127685639}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1464086972}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &127685641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127685639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9efba76735815546b07e6b37d9aa73c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  lightCtrl: {fileID: 0}
+  sphereCollider: {fileID: 0}
+--- !u!135 &127685642
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127685639}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 6
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &265777259
 GameObject:
   m_ObjectHideFlags: 0
@@ -6134,7 +6203,7 @@ GameObject:
   - component: {fileID: 1022835903}
   m_Layer: 0
   m_Name: LightPlant
-  m_TagString: Untagged
+  m_TagString: lightarea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6148,7 +6217,7 @@ Transform:
   m_GameObject: {fileID: 1022835901}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -82.29, y: 0.492, z: -42.47}
+  m_LocalPosition: {x: -57.72, y: 0.492, z: -38.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6169,11 +6238,11 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 5.33
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1022835904
 MeshRenderer:
@@ -6530,11 +6599,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fogRevealers:
   - revealerTransform: {fileID: 1830656733}
-    sightRange: 4
+    sightRange: 10
     updateOnlyOnMove: 0
     lastSeenAt: {x: 0, y: 0}
-  - revealerTransform: {fileID: 1388880957}
-    sightRange: 4
+  - revealerTransform: {fileID: 1022835902}
+    sightRange: 6
     updateOnlyOnMove: 0
     lastSeenAt: {x: 0, y: 0}
   levelMidPoint: {fileID: 1022009701}
@@ -6630,6 +6699,7 @@ Transform:
   - {fileID: 1217112795}
   - {fileID: 1022009701}
   - {fileID: 1830656733}
+  - {fileID: 127685640}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1464086973
@@ -6647,9 +6717,10 @@ MonoBehaviour:
   lightrange: 0
   lifetime: 10
   verloren: 0
+  load: 0
   fogWar: {fileID: 1217112796}
   gameover: {fileID: 0}
-  overlay: {fileID: 0}
+  overlay: {fileID: 750954590}
 --- !u!54 &1464086974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6751,7 +6822,7 @@ Transform:
   m_GameObject: {fileID: 1546009690}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -68.02012, y: -102.179214, z: -38.244366}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

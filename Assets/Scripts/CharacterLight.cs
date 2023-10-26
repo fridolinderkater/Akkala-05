@@ -12,7 +12,7 @@ public class CharacterLight : MonoBehaviour
 
     public bool verloren = false;
 
-    bool load;
+    public bool load;
 
     float time;
 
@@ -28,17 +28,12 @@ public class CharacterLight : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        
         count = lifetime;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
-
 
         csFogWar.FogRevealer firstFogRevealer = fogWar._FogRevealers[0];
         firstFogRevealer.sightRange =  lightrange;
@@ -65,7 +60,6 @@ public class CharacterLight : MonoBehaviour
     {
         if (other.CompareTag("lightarea"))
         {
-            Debug.Log("getriggert");
             load = true;
         }
     }
@@ -96,7 +90,7 @@ public class CharacterLight : MonoBehaviour
                 count--;
             }
             
-            timer = 0f; // Zurücksetzen des Timers für die nächste Sekunde
+            timer = 0f; // Zurï¿½cksetzen des Timers fï¿½r die nï¿½chste Sekunde
 
 
         }
