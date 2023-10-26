@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterControler : MonoBehaviour
 {
+    public static int schlüsselzähler = 0;
     public float moveSpeed = 5f;
 
     void Update()

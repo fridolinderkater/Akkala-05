@@ -6,6 +6,7 @@ TagManager:
   tags:
   - lightarea
   - ziel
+  - "schl\xFCssel"
   layers:
   - Default
   - TransparentFX
