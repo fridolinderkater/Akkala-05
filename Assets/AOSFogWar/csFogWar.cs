@@ -600,6 +600,7 @@ namespace FischlWorks_FogWar
         /// Adds a new FogRevealer instance to the list and returns its index
         public int AddFogRevealer(FogRevealer fogRevealer)
         {
+            
             fogRevealers.Add(fogRevealer);
 
             return fogRevealers.Count - 1;

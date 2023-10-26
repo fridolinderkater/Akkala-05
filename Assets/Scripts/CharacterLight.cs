@@ -21,6 +21,9 @@ public class CharacterLight : MonoBehaviour
 
     public csFogWar fogWar;
 
+    public GameObject gameover;
+    public GameObject overlay;
+
 
     // Start is called before the first frame update
     void Start()
@@ -47,6 +50,10 @@ public class CharacterLight : MonoBehaviour
             {
                 verloren = true;
                 Debug.Log("verloren");
+                overlay.SetActive(true);
+                gameover.SetActive(true);
+
+                
 
 
             }
