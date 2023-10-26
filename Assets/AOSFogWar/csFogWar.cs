@@ -162,8 +162,8 @@ namespace FischlWorks_FogWar
             public Transform _RevealerTransform => revealerTransform;
 
             [SerializeField]
-            public int sightRange = 0;
-            public int _SightRange => sightRange;
+            public float sightRange = 0;
+            public float _SightRange => sightRange;
 
             [SerializeField]
             private bool updateOnlyOnMove = true;
