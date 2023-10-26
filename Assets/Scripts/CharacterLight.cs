@@ -22,6 +22,7 @@ public class CharacterLight : MonoBehaviour
     public csFogWar fogWar;
 
     public GameObject gameover;
+    public GameObject win;
     public GameObject overlay;
 
 
@@ -68,6 +69,15 @@ public class CharacterLight : MonoBehaviour
         if (other.CompareTag("lightarea"))
         {
             load = false;
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("ziel"))
+        {
+            overlay.SetActive(true);
+            win.SetActive(true);
+            
         }
     }
     //##############################################################################
