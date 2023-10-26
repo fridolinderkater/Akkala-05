@@ -433,7 +433,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 133658262}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1712699663}
+        m_TargetAssemblyTypeName: restart, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &400822824
 GameObject:
   m_ObjectHideFlags: 0
@@ -6376,6 +6388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1712699662}
   - component: {fileID: 1712699661}
+  - component: {fileID: 1712699663}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -6410,6 +6423,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1712699663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712699660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b208d7175882f0d40988135725ee14c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1753514680
 GameObject:
   m_ObjectHideFlags: 0
@@ -6958,8 +6983,8 @@ MonoBehaviour:
   lifetime: 10
   verloren: 0
   fogWar: {fileID: 1933347209}
-  gameover: {fileID: 0}
-  overlay: {fileID: 0}
+  gameover: {fileID: 1753514680}
+  overlay: {fileID: 1606854866}
 --- !u!33 &395409506988067810
 MeshFilter:
   m_ObjectHideFlags: 0
