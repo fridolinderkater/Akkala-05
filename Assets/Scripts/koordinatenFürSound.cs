@@ -15,6 +15,6 @@ public class koordinatenFürSound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        höhe = transform.position.z - startposition;
+        höhe = transform.position.z - startposition - 3;
     }
 }
