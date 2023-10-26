@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class CharacterLight : MonoBehaviour
 {
-    public int lightrange;
+    public float currentLightrange;
+    public float maxLightrange = 10f;
     public int lifetime = 10;
+
 
     public bool verloren = false;
 
@@ -18,6 +20,9 @@ public class CharacterLight : MonoBehaviour
 
     private float timer = 0f;
     private int count;
+
+    public float increaseSpeed = 10f;
+    public float decreaseSpeed = 0.01f;
 
     public csFogWar fogWar;
 
@@ -30,32 +35,29 @@ public class CharacterLight : MonoBehaviour
     void Start()
     {
         count = lifetime;
+        currentLightrange = maxLightrange - 0.5f;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        csFogWar.FogRevealer firstFogRevealer = fogWar._FogRevealers[0];
-        firstFogRevealer.sightRange =  lightrange;
-
-
-        lightrange =  count;
-
-            if (lightrange <= 0f && verloren == false)
-            {
-                verloren = true;
-                Debug.Log("verloren");
-                overlay.SetActive(true);
-                gameover.SetActive(true);
-
-                
-
-
-            }
         
+        Debug.Log(currentLightrange);
+        //lightrange =  count;
+        //SightCalculation();
+
+
+        if (currentLightrange <= 0f && verloren == false)
+        {
+            verloren = true;
+            Debug.Log("verloren");
+            overlay.SetActive(true);
+            gameover.SetActive(true);
+        }
+
         
-       
     }
     private void OnTriggerStay(Collider other)
     {
@@ -84,26 +86,45 @@ public class CharacterLight : MonoBehaviour
     //Zeit
     void FixedUpdate()
     {
+        csFogWar.FogRevealer firstFogRevealer = fogWar._FogRevealers[0];
+        firstFogRevealer.sightRange =  currentLightrange;
         timer += Time.fixedDeltaTime;
-        if (timer >= 1f)
-        {
-            if (load)
-            {
-                if (lightrange < lifetime)
-                {
-                    count++;
-                }
+        SightCalculation();
+        // if (timer >= 1f)
+        // {
+        //     if (load)
+        //     {
+        //         if (currentLightrange < lifetime)
+        //         {
+        //             count++;
+        //         }
                     
-            }
-            else
-            {
-                count--;
-            }
+        //     }
+        //     else
+        //     {
+        //         count--;
+        //     }
             
-            timer = 0f; // Zur�cksetzen des Timers f�r die n�chste Sekunde
+        //     timer = 0f; // Zur�cksetzen des Timers f�r die n�chste Sekunde
 
 
+        // }
+    }
+
+
+
+
+    private void SightCalculation()
+    {
+        if(load && currentLightrange < maxLightrange)
+        {
+            currentLightrange += increaseSpeed * Time.deltaTime;
         }
+        else if (!load)
+        {
+            currentLightrange -= decreaseSpeed * Time.deltaTime;
+        }
+        currentLightrange = Mathf.Clamp(currentLightrange, 0, 10f); //lightrange bleibt im vorgeschriebenen bereich
     }
     //################################################################################
 }

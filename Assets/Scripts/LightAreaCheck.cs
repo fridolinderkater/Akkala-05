@@ -37,7 +37,7 @@ public class LightAreaCheck : MonoBehaviour
 
     private void UpdateRadius()
     {
-        sphereCollider.radius = lightCtrl.lightrange * 1.1f;
+        sphereCollider.radius = lightCtrl.currentLightrange * 1.1f;
 
     }
 }
