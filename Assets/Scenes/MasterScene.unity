@@ -6108,7 +6108,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1606854867}
-  - component: {fileID: 1606854871}
   - component: {fileID: 1606854870}
   - component: {fileID: 1606854869}
   - component: {fileID: 1606854868}
@@ -6193,18 +6192,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606854866}
   m_CullTransparentMesh: 1
---- !u!225 &1606854871
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606854866}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
 --- !u!1 &1664693864
 GameObject:
   m_ObjectHideFlags: 0
@@ -6379,6 +6366,50 @@ Transform:
   - {fileID: 102387246}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1712699660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712699662}
+  - component: {fileID: 1712699661}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1712699661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712699660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1fce978dc05b0a4cb4d2371aa92c66f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1712699662
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712699660}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.92797, y: -89.31303, z: 67.8607}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1753514680
 GameObject:
   m_ObjectHideFlags: 0
@@ -6927,6 +6958,8 @@ MonoBehaviour:
   lifetime: 10
   verloren: 0
   fogWar: {fileID: 1933347209}
+  gameover: {fileID: 0}
+  overlay: {fileID: 0}
 --- !u!33 &395409506988067810
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7271,3 +7304,4 @@ SceneRoots:
   - {fileID: 858897754}
   - {fileID: 1414596239}
   - {fileID: 1996009512}
+  - {fileID: 1712699662}

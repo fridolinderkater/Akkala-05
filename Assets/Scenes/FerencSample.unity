@@ -992,7 +992,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 766104382}
-  - component: {fileID: 766104386}
   - component: {fileID: 766104385}
   - component: {fileID: 766104384}
   - component: {fileID: 766104383}
@@ -1077,18 +1076,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766104381}
   m_CullTransparentMesh: 1
---- !u!225 &766104386
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766104381}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 0
-  m_IgnoreParentGroups: 0
 --- !u!1 &785521437
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,7 +1448,7 @@ GameObject:
   - component: {fileID: 1055287386}
   - component: {fileID: 1055287388}
   - component: {fileID: 1055287387}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RestartText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6605,11 +6592,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1161438683}
+  - component: {fileID: 1161438684}
   - component: {fileID: 1161438687}
   - component: {fileID: 1161438686}
   - component: {fileID: 1161438685}
-  - component: {fileID: 1161438684}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6771,7 +6758,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!1 &1385253024
 GameObject:
   m_ObjectHideFlags: 0
