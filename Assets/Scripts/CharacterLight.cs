@@ -46,7 +46,7 @@ public class CharacterLight : MonoBehaviour
 
         lightrange =  count;
 
-            if (lightrange == 0f)
+            if (lightrange <= 0f && verloren == false)
             {
                 verloren = true;
                 Debug.Log("verloren");
