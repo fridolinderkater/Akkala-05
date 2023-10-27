@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{259889a4-67fe-4e71-9fd4-92118f53169d}">
+		<property name="assetPath">
+			<value>Lamp1.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>38.310317460317464</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a946c51f-7d4f-4054-8488-fafe3c4943fa}</destination>
+		</relationship>
+	</object>
+</objects>

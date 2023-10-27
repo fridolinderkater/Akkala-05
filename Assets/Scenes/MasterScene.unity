@@ -500,6 +500,7 @@ GameObject:
   - component: {fileID: 277774479}
   - component: {fileID: 277774478}
   - component: {fileID: 277774477}
+  - component: {fileID: 277774480}
   m_Layer: 0
   m_Name: LightPlant (11)
   m_TagString: lightarea
@@ -593,6 +594,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 277774475}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &277774480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277774475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1288518298
+      Data2: 1110944134
+      Data3: -1137835105
+      Data4: -670799447
+    Path: event:/Lamp1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!1 &330329275
 GameObject:
   m_ObjectHideFlags: 0
@@ -5860,6 +5892,7 @@ GameObject:
   - component: {fileID: 733815336}
   - component: {fileID: 733815335}
   - component: {fileID: 733815334}
+  - component: {fileID: 733815337}
   m_Layer: 0
   m_Name: LightPlant (1)
   m_TagString: lightarea
@@ -5953,6 +5986,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733815332}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &733815337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733815332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1288518298
+      Data2: 1110944134
+      Data3: -1137835105
+      Data4: -670799447
+    Path: event:/Lamp1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!1 &747741428
 GameObject:
   m_ObjectHideFlags: 0
@@ -5965,6 +6029,7 @@ GameObject:
   - component: {fileID: 747741432}
   - component: {fileID: 747741431}
   - component: {fileID: 747741430}
+  - component: {fileID: 747741433}
   m_Layer: 0
   m_Name: LightPlant (10)
   m_TagString: lightarea
@@ -6058,6 +6123,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747741428}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &747741433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747741428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1288518298
+      Data2: 1110944134
+      Data3: -1137835105
+      Data4: -670799447
+    Path: event:/Lamp1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!1 &804755335
 GameObject:
   m_ObjectHideFlags: 0
@@ -6070,6 +6166,7 @@ GameObject:
   - component: {fileID: 804755339}
   - component: {fileID: 804755338}
   - component: {fileID: 804755337}
+  - component: {fileID: 804755340}
   m_Layer: 0
   m_Name: LightPlant (7)
   m_TagString: lightarea
@@ -6163,6 +6260,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804755335}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &804755340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804755335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1288518298
+      Data2: 1110944134
+      Data3: -1137835105
+      Data4: -670799447
+    Path: event:/Lamp1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!1 &858897753
 GameObject:
   m_ObjectHideFlags: 0
@@ -6340,6 +6468,7 @@ GameObject:
   - component: {fileID: 914369576}
   - component: {fileID: 914369575}
   - component: {fileID: 914369574}
+  - component: {fileID: 914369577}
   m_Layer: 0
   m_Name: LightPlant (6)
   m_TagString: lightarea
@@ -6433,6 +6562,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914369572}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &914369577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914369572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1288518298
+      Data2: 1110944134
+      Data3: -1137835105
+      Data4: -670799447
+    Path: event:/Lamp1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!1 &915516412
 GameObject:
   m_ObjectHideFlags: 0
@@ -6537,7 +6697,6 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
@@ -6546,14 +6705,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -6666,6 +6817,7 @@ GameObject:
   - component: {fileID: 1006069738}
   - component: {fileID: 1006069737}
   - component: {fileID: 1006069736}
+  - component: {fileID: 1006069739}
   m_Layer: 0
   m_Name: LightPlant (8)
   m_TagString: lightarea
@@ -6759,6 +6911,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006069734}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1006069739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006069734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1288518298
+      Data2: 1110944134
+      Data3: -1137835105
+      Data4: -670799447
+    Path: event:/Lamp1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!1001 &1068856154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6961,6 +7144,7 @@ GameObject:
   - component: {fileID: 1173011650}
   - component: {fileID: 1173011649}
   - component: {fileID: 1173011648}
+  - component: {fileID: 1173011651}
   m_Layer: 0
   m_Name: LightPlant
   m_TagString: lightarea
@@ -7054,6 +7238,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173011646}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1173011651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173011646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1288518298
+      Data2: 1110944134
+      Data3: -1137835105
+      Data4: -670799447
+    Path: event:/Lamp1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 10
 --- !u!1 &1192355442
 GameObject:
   m_ObjectHideFlags: 0
@@ -7066,6 +7281,7 @@ GameObject:
   - component: {fileID: 1192355446}
   - component: {fileID: 1192355445}
   - component: {fileID: 1192355444}
+  - component: {fileID: 1192355447}
   m_Layer: 0
   m_Name: LightPlant (5)
   m_TagString: lightarea
@@ -7159,6 +7375,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192355442}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1192355447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192355442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1288518298
+      Data2: 1110944134
+      Data3: -1137835105
+      Data4: -670799447
+    Path: event:/Lamp1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!1 &1282431046
 GameObject:
   m_ObjectHideFlags: 0
@@ -7480,6 +7727,7 @@ GameObject:
   - component: {fileID: 1417780726}
   - component: {fileID: 1417780725}
   - component: {fileID: 1417780724}
+  - component: {fileID: 1417780727}
   m_Layer: 0
   m_Name: LightPlant (3)
   m_TagString: lightarea
@@ -7573,6 +7821,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417780722}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1417780727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417780722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1288518298
+      Data2: 1110944134
+      Data3: -1137835105
+      Data4: -670799447
+    Path: event:/Lamp1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!1 &1477018194
 GameObject:
   m_ObjectHideFlags: 0
@@ -7703,6 +7982,7 @@ GameObject:
   - component: {fileID: 1510309038}
   - component: {fileID: 1510309037}
   - component: {fileID: 1510309036}
+  - component: {fileID: 1510309039}
   m_Layer: 0
   m_Name: LightPlant (9)
   m_TagString: lightarea
@@ -7796,6 +8076,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510309034}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1510309039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510309034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1288518298
+      Data2: 1110944134
+      Data3: -1137835105
+      Data4: -670799447
+    Path: event:/Lamp1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!1 &1606854866
 GameObject:
   m_ObjectHideFlags: 0
@@ -8003,6 +8314,7 @@ GameObject:
   - component: {fileID: 1666677326}
   - component: {fileID: 1666677325}
   - component: {fileID: 1666677324}
+  - component: {fileID: 1666677327}
   m_Layer: 0
   m_Name: LightPlant (2)
   m_TagString: lightarea
@@ -8096,6 +8408,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666677322}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1666677327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666677322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1288518298
+      Data2: 1110944134
+      Data3: -1137835105
+      Data4: -670799447
+    Path: event:/Lamp1
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 5
 --- !u!1 &1675743840
 GameObject:
   m_ObjectHideFlags: 0
@@ -8818,6 +9161,7 @@ GameObject:
   - component: {fileID: 2117899077}
   - component: {fileID: 2117899078}
   - component: {fileID: 2117899079}
+  - component: {fileID: 2117899080}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -8895,6 +9239,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
+  fmodEvent:
+    Guid:
+      Data1: -189206628
+      Data2: 1220628939
+      Data3: -558874200
+      Data4: -1729386134
+    Path: event:/Character
 --- !u!54 &2117899077
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8945,6 +9296,13 @@ MonoBehaviour:
   gameover: {fileID: 1753514680}
   win: {fileID: 0}
   overlay: {fileID: 1606854866}
+  fmodEvent:
+    Guid:
+      Data1: -189206628
+      Data2: 1220628939
+      Data3: -558874200
+      Data4: -1729386134
+    Path: event:/Character
 --- !u!114 &2117899079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8958,6 +9316,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "h\xF6he": 0
+  fmodEvent:
+    Guid:
+      Data1: -2126701850
+      Data2: 1254052570
+      Data3: 1547794363
+      Data4: -928716553
+    Path: event:/Musik
+--- !u!114 &2117899080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117899072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!33 &395409506988067810
 MeshFilter:
   m_ObjectHideFlags: 0

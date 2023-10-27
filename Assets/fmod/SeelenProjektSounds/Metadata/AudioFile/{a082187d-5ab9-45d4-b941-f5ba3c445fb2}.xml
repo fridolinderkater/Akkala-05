@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a082187d-5ab9-45d4-b941-f5ba3c445fb2}">
+		<property name="assetPath">
+			<value>Character/Seele1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>9.8907029478458046</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a946c51f-7d4f-4054-8488-fafe3c4943fa}</destination>
+		</relationship>
+	</object>
+</objects>

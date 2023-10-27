@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{06bfdb80-881d-45e3-b0ab-feb78f8c1d64}">
+		<property name="assetPath">
+			<value>underwater-loop-amb-6182.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>239.68799999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a946c51f-7d4f-4054-8488-fafe3c4943fa}</destination>
+		</relationship>
+	</object>
+</objects>

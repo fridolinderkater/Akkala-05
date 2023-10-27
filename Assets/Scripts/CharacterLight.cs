@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class CharacterLight : MonoBehaviour
 {
@@ -30,13 +31,18 @@ public class CharacterLight : MonoBehaviour
     public GameObject win;
     public GameObject overlay;
 
+    private FMOD.Studio.EventInstance instance;
+    public FMODUnity.EventReference fmodEvent;
+
 
     // Start is called before the first frame update
     void Start()
     {
         count = lifetime;
         currentLightrange = maxLightrange - 0.5f;
-        
+        instance = FMODUnity.RuntimeManager.CreateInstance(fmodEvent);
+        instance.start();
+
     }
 
     // Update is called once per frame
@@ -44,20 +50,21 @@ public class CharacterLight : MonoBehaviour
     {
 
         
-        Debug.Log(currentLightrange);
+        
         //lightrange =  count;
         //SightCalculation();
 
 
         if (currentLightrange <= 0f && verloren == false)
         {
+            RuntimeManager.PlayOneShot("event:/Death1");
             verloren = true;
             Debug.Log("verloren");
             overlay.SetActive(true);
             gameover.SetActive(true);
         }
 
-        
+        instance.setParameterByName("Health", currentLightrange * 10);
     }
     private void OnTriggerStay(Collider other)
     {

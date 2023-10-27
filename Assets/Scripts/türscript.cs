@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class türscript : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class türscript : MonoBehaviour
         if (other.CompareTag("Player") && CharacterControler.schlüsselzähler == 2)
         {
 
-
+            RuntimeManager.PlayOneShot("event:/Door1");
             this.gameObject.SetActive(false);
 
         }

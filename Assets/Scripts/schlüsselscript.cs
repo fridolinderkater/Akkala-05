@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class schlüsselscript : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class schlüsselscript : MonoBehaviour
         
             if (other.CompareTag("Player"))
             {
+            RuntimeManager.PlayOneShot("event:/Key1");
             CharacterControler.schlüsselzähler++;
             
             this.gameObject.SetActive(false);
