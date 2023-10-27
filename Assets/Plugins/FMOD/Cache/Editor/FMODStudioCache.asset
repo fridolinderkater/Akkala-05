@@ -173,7 +173,7 @@ MonoBehaviour:
   Path: Assets/fmod/SeelenProjektSounds/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638339960470605085
+  lastModified: 638340000758245081
   FileSizes:
   - Name: Desktop
     Value: 4443360
@@ -206,7 +206,7 @@ MonoBehaviour:
   - {fileID: -971512542270770385}
   StringsBanks:
   - {fileID: 1874526174946847594}
-  cacheTime: 638339960470675448
+  cacheTime: 638340000758261366
   cacheVersion: 131608
 --- !u!114 &1717436491255842479
 MonoBehaviour:
@@ -251,7 +251,7 @@ MonoBehaviour:
   Path: Assets/fmod/SeelenProjektSounds/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638339960470675448
+  lastModified: 638340000758261366
   FileSizes:
   - Name: Desktop
     Value: 1130
