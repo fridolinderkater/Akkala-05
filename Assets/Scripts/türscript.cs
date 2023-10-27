@@ -5,10 +5,14 @@ using FMODUnity;
 
 public class türscript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public DoorAnimation animation;
+    public GameObject Door1;
+    [SerializeField] private int requiredKeys;
+    //public BoxCollider boxCollider;
     void Start()
     {
-        
+        animation = GetComponent<DoorAnimation>();
+        //boxCollider = Door1.GetComponent<boxCollider>();
     }
 
     // Update is called once per frame
@@ -20,11 +24,14 @@ public class türscript : MonoBehaviour
     {
 
 
-        if (other.CompareTag("Player") && CharacterControler.schlüsselzähler == 2)
+        if (other.CompareTag("Player") && CharacterControler.schlüsselzähler == requiredKeys)
         {
 
             RuntimeManager.PlayOneShot("event:/Door1");
-            this.gameObject.SetActive(false);
+            animation.openDoorsAnimation();
+            Door1.GetComponent<BoxCollider>().enabled = false;
+
+            
 
         }
 

@@ -19,6 +19,7 @@ public class restart : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("MasterScene");
+        CharacterControler.schlüsselzähler = 0;
     }
     
 }

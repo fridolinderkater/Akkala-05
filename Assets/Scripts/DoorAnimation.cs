@@ -23,6 +23,4 @@ public class DoorAnimation : MonoBehaviour
         lAnimator.SetBool("Open01", true);
         rAnimator.SetBool("Open01", true);
     }
-
-
 }
