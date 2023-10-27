@@ -16,7 +16,6 @@ public class DoorAnimation : MonoBehaviour
         lAnimator = leftDoor.GetComponent<Animator>();
         rAnimator = rightDoor.GetComponent<Animator>();
 
-        openDoorsAnimation();
     }
 
     public void openDoorsAnimation()
