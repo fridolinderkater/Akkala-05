@@ -27,14 +27,24 @@ public class türscript : MonoBehaviour
         if (other.CompareTag("Player") && CharacterControler.schlüsselzähler == requiredKeys)
         {
 
-            RuntimeManager.PlayOneShot("event:/Door1");
-            animation.openDoorsAnimation();
-            Door1.GetComponent<BoxCollider>().enabled = false;
-
+            // RuntimeManager.PlayOneShot("event:/Door1");
+            // animation.openDoorsAnimation();
+            // Door1.GetComponent<BoxCollider>().enabled = false;
+            StartCoroutine(openCoroutine());
             
 
         }
 
+
+    }
+
+    public IEnumerator openCoroutine()
+    {
+        RuntimeManager.PlayOneShot("event./Door1");
+        animation.openDoorsAnimation();
+        Door1.GetComponent<BoxCollider>().enabled = false;
+        yield return new WaitForSeconds(1f);
+        this.GameObject.SetActive(false);
 
     }
 }
